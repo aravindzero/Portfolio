@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aravindhan R | AI & Data Science Portfolio</title>
+  <meta name="description" content="Portfolio of Aravindhan R — M.Sc. AI & Data Science student, Full-Stack Developer, AI Engineer and Machine Learning Engineer. Explore projects, skills, and experience.">
+  <meta name="keywords" content="Aravindhan R, AI, Data Science, Machine Learning, Python, Django, Portfolio">
+  <meta name="theme-color" content="#0a0a0f">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Aravindhan R | AI & Data Science Portfolio">
+  <meta property="og:description" content="Portfolio of Aravindhan R — M.Sc. AI & Data Science student, Full-Stack Developer, and Machine Learning Engineer. Explore projects, skills, and experience.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Inter and Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Local CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- GSAP Core and ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  
+  <!-- Local JS -->
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">ARAVINDHAN R</a>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
+      <div class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero section" id="home">
+    <canvas id="particles-canvas"></canvas>
+    <div class="hero-content container">
+      <div class="hero-text">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name"><span class="gradient-text">Aravindhan R</span></h1>
+
+        <p class="hero-description">M.Sc. Artificial Intelligence & Data Science postgraduate with strong skills in Python, AI, Machine Learning, and Full-Stack Development. Passionate about building data-driven solutions and interactive web applications.</p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn-primary"><i class="fas fa-paper-plane"></i> Get in Touch</a>
+          <a href="#projects" class="btn-outline"><i class="fas fa-code"></i> View Projects</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="profile-img-wrapper">
+          <img src="assets/profile.jpg" alt="Aravindhan R - AI & Data Science Professional" class="profile-img">
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title"><span class="gradient-text">About Me</span></h2>
+        <p class="section-subtitle">Get to know me better</p>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <p>I'm an <span class="about-highlight">M.Sc. Artificial Intelligence & Data Science</span> postgraduate at Karunya Institute of Technology and Sciences, Coimbatore. With a strong foundation in Python, Machine Learning, and Data Analysis, I specialize in building intelligent, data-driven web applications.</p>
+          <p>My experience spans from developing <span class="about-highlight">AI-powered computer vision systems</span> to building <span class="about-highlight">real-time machine learning pipelines</span>. I'm proficient in Django, Flask, FastAPI, and React, enabling me to deliver full-stack solutions from concept to deployment.</p>
+          <p>I thrive on solving complex problems using predictive modeling, statistical analysis, and exploratory data analysis. My goal is to leverage AI and data science to create impactful, real-world solutions.</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-item reveal">
+            <span class="stat-number" data-count="7">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat-item reveal">
+            <span class="stat-number" data-count="10">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+          <div class="stat-item reveal">
+            <span class="stat-number" data-count="360">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Hours Certified</span>
+          </div>
+          <div class="stat-item reveal">
+            <span class="stat-number" data-count="1">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Internships</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title"><span class="gradient-text">My Skills</span></h2>
+        <p class="section-subtitle">Technologies and tools I work with</p>
+      </div>
+      <div class="skills-grid">
+        <!-- Category 1 -->
+        <div class="skill-category">
+          <h3 class="skill-category-title"><i class="fas fa-brain"></i> Machine Learning & AI</h3>
+          <div class="skill-list">
+            <span class="skill-name">Machine Learning</span>
+            <span class="skill-name">Data Preprocessing</span>
+            <span class="skill-name">Feature Engineering</span>
+            <span class="skill-name">Model Training & Evaluation</span>
+            <span class="skill-name">Data Mining</span>
+          </div>
+        </div>
+
+        <!-- Category 2 -->
+        <div class="skill-category">
+          <h3 class="skill-category-title"><i class="fas fa-code"></i> Programming Languages</h3>
+          <div class="skill-list">
+            <span class="skill-name">Python</span>
+            <span class="skill-name">JavaScript</span>
+            <span class="skill-name">SQL</span>
+            <span class="skill-name">HTML5 & CSS3</span>
+          </div>
+        </div>
+
+        <!-- Category 3 -->
+        <div class="skill-category">
+          <h3 class="skill-category-title"><i class="fas fa-layer-group"></i> Frameworks & Libraries</h3>
+          <div class="skill-list">
+            <span class="skill-name">Django</span>
+            <span class="skill-name">Flask</span>
+            <span class="skill-name">React.js</span>
+            <span class="skill-name">FastAPI</span>
+            <span class="skill-name">Scikit-learn</span>
+          </div>
+        </div>
+
+        <!-- Category 4 -->
+        <div class="skill-category">
+          <h3 class="skill-category-title"><i class="fas fa-database"></i> Databases</h3>
+          <div class="skill-list">
+            <span class="skill-name">PostgreSQL</span>
+            <span class="skill-name">SQL</span>
+            <span class="skill-name">Redis</span>
+          </div>
+        </div>
+
+        <!-- Category 5 -->
+        <div class="skill-category">
+          <h3 class="skill-category-title"><i class="fas fa-chart-line"></i> Data Science & Analytics</h3>
+          <div class="skill-list">
+            <span class="skill-name">Data Analysis</span>
+            <span class="skill-name">Data Visualization</span>
+            <span class="skill-name">Statistical Analysis</span>
+            <span class="skill-name">Exploratory Data Analysis</span>
+          </div>
+        </div>
+
+        <!-- Category 6 -->
+        <div class="skill-category">
+          <h3 class="skill-category-title"><i class="fas fa-tools"></i> Tools & Technologies</h3>
+          <div class="skill-list">
+            <span class="skill-name">Git & GitHub</span>
+            <span class="skill-name">Jupyter Notebook</span>
+            <span class="skill-name">Tableau</span>
+            <span class="skill-name">Google Colab</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title"><span class="gradient-text">Experience</span></h2>
+        <p class="section-subtitle">My professional journey</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-line"></div>
+        
+        <!-- Entry 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">June 2026</span>
+            <h3 class="timeline-title">Python Development Intern</h3>
+            <h4 class="timeline-company">TecnolynxGlobal Private Limited</h4>
+            <p class="timeline-description">Completed a one-month Python Development Internship, contributing to the development of an AI-powered architectural floor plan analysis system using Python, Django, React.js, YOLOv8, PaddleOCR, and OpenCV.</p>
+            <ul class="timeline-list">
+              <li>Gained hands-on experience in full-stack development</li>
+              <li>Worked with computer vision, OCR, and performance optimization</li>
+              <li>Contributed to AI-powered architectural analysis system</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Entry 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Feb 2024 – May 2024</span>
+            <h3 class="timeline-title">Python Full Stack Development (360 Hours)</h3>
+            <h4 class="timeline-company">Uniq Technologies, Coimbatore</h4>
+            <p class="timeline-description">Comprehensive full-stack development certification program.</p>
+            <ul class="timeline-list">
+              <li>Built responsive web pages using HTML5, CSS3, and Bootstrap</li>
+              <li>Developed interactive front-end functionality using JavaScript</li>
+              <li>Developed web applications using Flask and Django frameworks</li>
+              <li>Worked with SQL databases and performed CRUD operations</li>
+              <li>Gained understanding of full-stack web application development</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title"><span class="gradient-text">Projects</span></h2>
+      </div>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-icon"><i class="fas fa-file-pdf"></i></div>
+          <h3 class="project-title">AI-Powered PDF Drawings Identifier</h3>
+          <p class="project-description">A web application to analyse architectural PDF floor plans using AI. Integrated YOLOv8, PaddleOCR, and OpenCV for object detection, text extraction, and image processing.</p>
+          <p class="project-highlight-text">Optimized processing time from <span class="project-highlight">75s to under 30s</span></p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Django</span>
+            <span class="tech-tag">React.js</span>
+            <span class="tech-tag">YOLOv8</span>
+            <span class="tech-tag">PaddleOCR</span>
+            <span class="tech-tag">OpenCV</span>
+            <span class="tech-tag">Celery</span>
+            <span class="tech-tag">Redis</span>
+            <span class="tech-tag">PostgreSQL</span>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-icon"><i class="fas fa-house"></i></div>
+          <h3 class="project-title">House Price Prediction</h3>
+          <p class="project-description">A machine learning-based web app using Random Forest for real-time house price predictions. Built with Python, Flask, and Scikit-learn with data preprocessing and model evaluation (MAE, R²).</p>
+          <p class="project-highlight-text">Delivers real-time predictions in <span class="project-highlight">USD and INR</span></p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Flask</span>
+            <span class="tech-tag">Scikit-learn</span>
+            <span class="tech-tag">Random Forest</span>
+            <span class="tech-tag">HTML/CSS</span>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-icon"><i class="fab fa-bitcoin"></i></div>
+          <h3 class="project-title">Cryptocurrency Prediction & Concept Drift</h3>
+          <p class="project-description">A real-time machine learning pipeline using XGBoost and streaming data from Binance API. Implemented concept drift detection using the PageHinkley test with automated model retraining.</p>
+          <p class="project-highlight-text">Interactive dashboard for <span class="project-highlight">live monitoring</span></p>
+          <div class="project-tech">
+            <span class="tech-tag">XGBoost</span>
+            <span class="tech-tag">Binance API</span>
+            <span class="tech-tag">FastAPI</span>
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">PageHinkley</span>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+          <div class="project-icon"><i class="fas fa-apple-whole"></i></div>
+          <h3 class="project-title">Food Spoilage Prediction System</h3>
+          <p class="project-description">A probabilistic food spoilage prediction system using Monte Carlo simulations to estimate spoilage risk under uncertain conditions. Built a full-stack application enabling real-time simulation and statistical analysis.</p>
+          <p class="project-highlight-text">Real-time simulation with <span class="project-highlight">confidence intervals</span></p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Flask</span>
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">Monte Carlo</span>
+            <span class="tech-tag">Statistics</span>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card">
+          <div class="project-icon"><i class="fas fa-bolt"></i></div>
+          <h3 class="project-title">Intelligent Power Control System</h3>
+          <p class="project-description">An IoT-based smart energy management system that automatically switches fans and lights based on real-time occupancy detection using PIR and ultrasonic sensors, eliminating human error and minimizing power wastage in vacant rooms.</p>
+          <p class="project-highlight-text">Automated occupancy-based <span class="project-highlight">energy optimization</span></p>
+          <div class="project-tech">
+            <span class="tech-tag">IoT</span>
+            <span class="tech-tag">PIR Sensor</span>
+            <span class="tech-tag">Ultrasonic Sensor</span>
+            <span class="tech-tag">Microcontroller</span>
+            <span class="tech-tag">Relay Module</span>
+            <span class="tech-tag">Embedded C</span>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card">
+          <div class="project-icon"><i class="fas fa-leaf"></i></div>
+          <h3 class="project-title">Smart Plant Health System</h3>
+          <p class="project-description">An AI-powered plant disease detection system using EfficientNet with Grad-CAM visual explanations. Estimates disease severity, filters low-quality images, and integrates real-time weather intelligence for context-aware remedies and actionable farming advice.</p>
+          <p class="project-highlight-text">Grad-CAM explainability with <span class="project-highlight">severity estimation</span></p>
+          <div class="project-tech">
+            <span class="tech-tag">EfficientNet</span>
+            <span class="tech-tag">Grad-CAM</span>
+            <span class="tech-tag">Transfer Learning</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Weather API</span>
+            <span class="tech-tag">PlantVillage</span>
+          </div>
+        </div>
+
+        <!-- Project 7 -->
+        <div class="project-card">
+          <div class="project-icon"><i class="fas fa-vector-square"></i></div>
+          <h3 class="project-title">Edge-Based Object Boundary Detection</h3>
+          <p class="project-description">A computer vision project that identifies object boundaries using edge detection and shape representation. Converts images to grayscale, applies Sobel and Canny edge detection, extracts contours, and draws precise object boundaries.</p>
+          <p class="project-highlight-text">Sobel & Canny <span class="project-highlight">contour extraction</span></p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">OpenCV</span>
+            <span class="tech-tag">Sobel</span>
+            <span class="tech-tag">Canny</span>
+            <span class="tech-tag">Contour Detection</span>
+            <span class="tech-tag">Image Processing</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title"><span class="gradient-text">Education</span></h2>
+        <p class="section-subtitle">My academic background</p>
+      </div>
+      <div class="edu-timeline">
+        <!-- Entry 1 -->
+        <div class="edu-item">
+          <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="edu-content">
+            <h3 class="edu-degree">M.Sc. Artificial Intelligence & Data Science</h3>
+            <h4 class="edu-institution">Karunya Institute of Technology and Sciences</h4>
+            <div class="edu-meta">
+              <span class="edu-year">2025 – 2027</span>
+              <span class="edu-location">Coimbatore, Tamilnadu, India</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Entry 2 -->
+        <div class="edu-item">
+          <div class="edu-icon"><i class="fas fa-flask"></i></div>
+          <div class="edu-content">
+            <h3 class="edu-degree">B.Sc. Chemistry</h3>
+            <h4 class="edu-institution">Govt Arts and Science College for Men</h4>
+            <div class="edu-meta">
+              <span class="edu-year">2020 – 2023</span>
+              <span class="edu-location">Krishnagiri, Tamilnadu, India</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Entry 3 -->
+        <div class="edu-item">
+          <div class="edu-icon"><i class="fas fa-school"></i></div>
+          <div class="edu-content">
+            <h3 class="edu-degree">High School</h3>
+            <h4 class="edu-institution">Government Boys Higher Secondary School</h4>
+            <div class="edu-meta">
+              <span class="edu-year">Completed</span>
+              <span class="edu-location">Krishnagiri, TamilNadu</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title"><span class="gradient-text">Get In Touch</span></h2>
+        <p class="section-subtitle">Have a project in mind? Let's work together</p>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-text">
+              <span class="contact-label">Email</span>
+              <a href="mailto:aravindhan2003rs@gmail.com">aravindhan2003rs@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div class="contact-text">
+              <span class="contact-label">Phone</span>
+              <a href="tel:+919443901065">+91 9443901065</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-location-dot"></i></div>
+            <div class="contact-text">
+              <span class="contact-label">Location</span>
+              <span>Coimbatore, Tamil Nadu, India</span>
+            </div>
+          </div>
+          <div class="contact-social">
+            <a href="https://www.linkedin.com/in/aravind15" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/aravindzero" target="_blank" rel="noopener" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="mailto:aravindhan2003rs@gmail.com" class="social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label class="form-label" for="name">Your Name</label>
+            <input type="text" id="name" class="form-input" placeholder="John Doe" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Your Email</label>
+            <input type="email" id="email" class="form-input" placeholder="john@example.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="subject">Subject</label>
+            <input type="text" id="subject" class="form-input" placeholder="Project Discussion" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="message">Message</label>
+            <textarea id="message" class="form-textarea" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn-submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+          <div class="form-status"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p class="footer-text">&copy; 2026 Aravindhan R. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/aravind15" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/aravindzero" target="_blank" rel="noopener" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="mailto:aravindhan2003rs@gmail.com" class="social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
