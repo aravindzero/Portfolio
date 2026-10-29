@@ -1,0 +1,13 @@
+# Python virtual environment
+myenv/
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
