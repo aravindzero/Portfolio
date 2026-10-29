@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-    let particleRGB = '0, 0, 0'; // default light
+    let particleRGB = '30, 30, 60'; // default light
 
     const updateParticleColors = (theme) => {
-        particleRGB = theme === 'dark' ? '255, 255, 255' : '0, 0, 0';
+        particleRGB = theme === 'dark' ? '255, 255, 255' : '30, 30, 60';
     };
 
     // ============================================
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 this.radius = Math.random() * 2 + 1;
                 this.dx = (Math.random() - 0.5) * 1;
                 this.dy = (Math.random() - 0.5) * 1;
-                this.opacity = Math.random() * 0.3 + 0.1;
+                this.opacity = Math.random() * 0.4 + 0.2;
             }
 
             draw() {
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                    ((particles[a].y - particles[b].y) * (particles[a].y - particles[b].y));
                     if (distance < (120 * 120)) {
                         opacityValue = 1 - (distance / 14400);
-                        ctx.strokeStyle = `rgba(${particleRGB}, ${opacityValue * 0.2})`;
+                        ctx.strokeStyle = `rgba(${particleRGB}, ${opacityValue * 0.35})`;
                         ctx.lineWidth = 1;
                         ctx.beginPath();
                         ctx.moveTo(particles[a].x, particles[a].y);
